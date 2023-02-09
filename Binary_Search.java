@@ -3,9 +3,11 @@ public class Binary_Search
 {
     public static void main(String args[])
     {
-        int arr[]=new int[10];
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter 10 numbers in the Array");
+        System.out.println("Enter the total number you want to enter in the Array");
+        int tn=sc.nextInt();
+        int arr[]=new int[tn];
+        System.out.println("Enter numbers in the Array");
         for(int k=0; k<arr.length; k++)
         arr[k]=sc.nextInt();
         int l=0, u=arr.length-1, val, pos=-1, mid=0;
